@@ -90,9 +90,9 @@ export default async function ProjectsPage() {
                       <span
                         className={`px-2.5 py-1 rounded-full text-xs font-medium ${
                           project.status === 'active'
-                            ? 'bg-green-100 text-green-700'
+                            ? 'bg-violet-100 text-violet-700'
                             : project.status === 'mvp_preview'
-                            ? 'bg-blue-100 text-blue-700'
+                            ? 'bg-purple-100 text-purple-700'
                             : 'bg-gray-100 text-gray-700'
                         }`}
                       >
@@ -108,13 +108,13 @@ export default async function ProjectsPage() {
                       </div>
                       <div className="bg-gray-50 rounded-lg p-3">
                         <div className="text-xs text-gray-600 mb-1">Completed</div>
-                        <div className="text-2xl font-bold text-green-600">{completedTasks}</div>
+                        <div className="text-2xl font-bold text-violet-600">{completedTasks}</div>
                       </div>
                     </div>
 
                     {/* Active Tasks */}
                     {activeTasks > 0 && (
-                      <div className="flex items-center text-sm text-blue-600 bg-blue-50 rounded-lg px-3 py-2">
+                      <div className="flex items-center text-sm text-purple-600 bg-purple-50 rounded-lg px-3 py-2">
                         <Clock className="w-4 h-4 mr-2" />
                         {activeTasks} active {activeTasks === 1 ? 'task' : 'tasks'}
                       </div>

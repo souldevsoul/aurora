@@ -71,11 +71,11 @@ export function CreditPackages({ userId }: { userId: string }) {
   return (
     <div>
       {/* Beta Notice */}
-      <div className="mb-6 p-4 bg-blue-50 border border-blue-200 rounded-lg flex items-start gap-3">
-        <Mail className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+      <div className="mb-6 p-4 bg-purple-50 border border-purple-200 rounded-lg flex items-start gap-3">
+        <Mail className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5" />
         <div>
-          <h3 className="text-sm font-semibold text-blue-900 mb-1">Beta Notice</h3>
-          <p className="text-sm text-blue-700">
+          <h3 className="text-sm font-semibold text-purple-900 mb-1">Beta Notice</h3>
+          <p className="text-sm text-purple-700">
             We're currently in beta. To purchase credits, please contact{' '}
             <a href="mailto:support@accelerator.dev" className="underline font-medium">
               support@accelerator.dev
@@ -110,7 +110,7 @@ export function CreditPackages({ userId }: { userId: string }) {
                 <span className="text-4xl font-bold text-gray-900">${pkg.price}</span>
               </div>
               {pkg.savings && (
-                <div className="inline-block bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="inline-block bg-violet-100 text-violet-700 px-3 py-1 rounded-full text-sm font-semibold">
                   Save {pkg.savings}%
                 </div>
               )}

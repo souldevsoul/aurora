@@ -153,10 +153,24 @@ module.exports = {
                     break;
                   }
 
-                  // Check with dynamic route patterns like [locale]
+                  // Check with route groups like (marketing), (auth), (dashboard)
                   try {
                     const searchDir = fs.existsSync(baseDir) ? fs.readdirSync(baseDir) : [];
                     for (const entry of searchDir) {
+                      // Check for route groups (marketing), (auth), etc.
+                      if (entry.startsWith('(') && entry.endsWith(')')) {
+                        const groupPath = path.join(baseDir, entry);
+                        const groupFiles = [
+                          path.join(groupPath, cleanPath, 'page.tsx'),
+                          path.join(groupPath, cleanPath, 'page.jsx'),
+                        ];
+
+                        if (groupFiles.some(file => fs.existsSync(file))) {
+                          fileExists = true;
+                          break;
+                        }
+                      }
+
                       // Check for [locale] or other dynamic segments
                       if (entry.startsWith('[') && entry.endsWith(']')) {
                         const dynamicPath = path.join(baseDir, entry);

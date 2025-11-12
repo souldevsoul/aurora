@@ -101,9 +101,9 @@ export default async function ProjectDetailPage({ params }: Props) {
                       <div
                         className={`w-3 h-3 rounded-full mr-3 ${
                           latestMVP.status === 'completed'
-                            ? 'bg-green-500'
+                            ? 'bg-violet-500'
                             : latestMVP.status === 'running'
-                            ? 'bg-blue-500 animate-pulse'
+                            ? 'bg-purple-500 animate-pulse'
                             : latestMVP.status === 'failed'
                             ? 'bg-red-500'
                             : 'bg-gray-400'
@@ -202,9 +202,9 @@ export default async function ProjectDetailPage({ params }: Props) {
                   <span
                     className={`inline-flex px-2.5 py-1 rounded-full text-xs font-medium ${
                       project.status === 'active'
-                        ? 'bg-green-100 text-green-700'
+                        ? 'bg-violet-100 text-violet-700'
                         : project.status === 'mvp_preview'
-                        ? 'bg-blue-100 text-blue-700'
+                        ? 'bg-purple-100 text-purple-700'
                         : 'bg-gray-100 text-gray-700'
                     }`}
                   >
@@ -236,13 +236,13 @@ export default async function ProjectDetailPage({ params }: Props) {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-600">In Progress</span>
-                  <span className="font-semibold text-blue-600">
+                  <span className="font-semibold text-purple-600">
                     {project.tasks.filter((t) => t.status === 'in_progress' || t.status === 'assigned').length}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-gray-600">Completed</span>
-                  <span className="font-semibold text-green-600">
+                  <span className="font-semibold text-violet-600">
                     {project.tasks.filter((t) => t.status === 'done').length}
                   </span>
                 </div>

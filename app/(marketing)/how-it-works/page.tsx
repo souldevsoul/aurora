@@ -105,7 +105,7 @@ export default function HowItWorksPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-pink-600 to-fuchsia-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mr-4">
                     3
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900">
@@ -117,32 +117,32 @@ export default function HowItWorksPage() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Eye className="w-5 h-5 text-green-600 mr-3 mt-1" />
+                    <Eye className="w-5 h-5 text-pink-600 mr-3 mt-1" />
                     <span className="text-gray-700">View live preview of your MVP</span>
                   </li>
                   <li className="flex items-start">
-                    <ListTodo className="w-5 h-5 text-green-600 mr-3 mt-1" />
+                    <ListTodo className="w-5 h-5 text-pink-600 mr-3 mt-1" />
                     <span className="text-gray-700">Create and prioritize tasks</span>
                   </li>
                   <li className="flex items-start">
-                    <Users className="w-5 h-5 text-green-600 mr-3 mt-1" />
+                    <Users className="w-5 h-5 text-pink-600 mr-3 mt-1" />
                     <span className="text-gray-700">AI execution with developer review</span>
                   </li>
                 </ul>
               </div>
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 h-80 flex items-center justify-center">
-                <ListTodo className="w-32 h-32 text-green-600" />
+              <div className="bg-gradient-to-br from-pink-50 to-fuchsia-50 rounded-2xl p-8 h-80 flex items-center justify-center">
+                <ListTodo className="w-32 h-32 text-pink-600" />
               </div>
             </div>
 
             {/* Step 4 */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 h-80 flex items-center justify-center">
-                <Check className="w-32 h-32 text-orange-600" />
+              <div className="order-2 md:order-1 bg-gradient-to-br from-violet-50 to-purple-50 rounded-2xl p-8 h-80 flex items-center justify-center">
+                <Check className="w-32 h-32 text-violet-600" />
               </div>
               <div className="order-1 md:order-2">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-600 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mr-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-violet-600 to-purple-600 rounded-xl flex items-center justify-center text-white font-bold text-xl mr-4">
                     4
                   </div>
                   <h2 className="text-3xl font-bold text-gray-900">
@@ -154,15 +154,15 @@ export default function HowItWorksPage() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 text-orange-600 mr-3 mt-1" />
+                    <Check className="w-5 h-5 text-violet-600 mr-3 mt-1" />
                     <span className="text-gray-700">Review code and changes in GitHub</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 text-orange-600 mr-3 mt-1" />
+                    <Check className="w-5 h-5 text-violet-600 mr-3 mt-1" />
                     <span className="text-gray-700">Merge when ready - credits only charged on completion</span>
                   </li>
                   <li className="flex items-start">
-                    <Check className="w-5 h-5 text-orange-600 mr-3 mt-1" />
+                    <Check className="w-5 h-5 text-violet-600 mr-3 mt-1" />
                     <span className="text-gray-700">Deploy to Vercel, Netlify, or your platform</span>
                   </li>
                 </ul>
@@ -188,7 +188,7 @@ export default function HowItWorksPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <Users className="w-8 h-8 text-purple-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -199,8 +199,8 @@ export default function HowItWorksPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Check className="w-8 h-8 text-green-600" />
+                <div className="w-16 h-16 bg-violet-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Check className="w-8 h-8 text-violet-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Full Control
@@ -222,12 +222,12 @@ export default function HowItWorksPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/login">
-                <Button size="large" className="text-lg px-8 h-14 flex items-center">
+                <Button type="button" size="large" className="text-lg px-8 h-14 flex items-center">
                   Get Started Free <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
               <Link href="/pricing">
-                <Button size="large" variant="outline" className="text-lg px-8 h-14">
+                <Button type="button" size="large" variant="outline" className="text-lg px-8 h-14">
                   View Pricing
                 </Button>
               </Link>

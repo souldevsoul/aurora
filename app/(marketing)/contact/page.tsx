@@ -27,12 +27,12 @@ export default function ContactPage() {
             <p className="text-xl text-gray-700 mb-4 max-w-2xl mx-auto">
               Have questions? We'd love to hear from you.
             </p>
-            <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 max-w-2xl mx-auto mb-12">
+            <div className="bg-purple-50 border border-purple-200 rounded-xl p-4 max-w-2xl mx-auto mb-12">
               <p className="text-gray-900 font-semibold">
                 Form submissions are currently in development.
               </p>
               <p className="text-gray-700 mt-1">
-                Please email us directly at <a href="mailto:support@nimbusdev.com" className="text-purple-600 hover:underline">support@nimbusdev.com</a>
+                Please email us directly at <a href="mailto:support@auroradev.com" className="text-purple-600 hover:underline">support@auroradev.com</a>
               </p>
             </div>
           </div>
@@ -47,8 +47,8 @@ export default function ContactPage() {
               {
                 icon: Mail,
                 title: 'Email Us',
-                description: 'support@nimbusdev.com',
-                action: 'mailto:support@nimbusdev.com'
+                description: 'support@auroradev.com',
+                action: 'mailto:support@auroradev.com'
               },
               {
                 icon: MessageSquare,
@@ -65,8 +65,8 @@ export default function ContactPage() {
               {
                 icon: Building2,
                 title: 'Enterprise',
-                description: 'enterprise@nimbusdev.com',
-                action: 'mailto:enterprise@nimbusdev.com'
+                description: 'support@auroradev.com',
+                action: 'mailto:support@auroradev.com'
               }
             ].map((option, index) => (
               <a
@@ -127,7 +127,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="subject"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-600 focus:border-transparent outline-none transition"
                     placeholder="How can we help?"
                     disabled
                   />
@@ -146,6 +146,7 @@ export default function ContactPage() {
                 </div>
                 <div className="text-center">
                   <Button
+                    type="submit"
                     variant="primary"
                     size="large"
                     className="w-full md:w-auto"
@@ -173,10 +174,10 @@ export default function ContactPage() {
             Check out our FAQ section or documentation for instant answers to common questions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="outline" size="large">
+            <Button variant="outline" size="large" type="button">
               View FAQ
             </Button>
-            <Button variant="outline" size="large">
+            <Button variant="outline" size="large" type="button">
               Read Docs
             </Button>
           </div>

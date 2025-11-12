@@ -51,7 +51,7 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-purple-600 to-violet-500 rounded-3xl"></div>
+              <div className="aspect-[1/1] bg-gradient-to-br from-purple-600 to-violet-500 rounded-3xl"></div>
             </div>
           </div>
         </div>
@@ -137,6 +137,7 @@ export default function AboutPage() {
               <Button
                 variant="secondary"
                 size="large"
+                type="button"
               >
                 Get Started Free
               </Button>

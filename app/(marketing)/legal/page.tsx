@@ -109,20 +109,20 @@ export default function LegalPage() {
               <div className="space-y-4 text-gray-600">
                 <div>
                   <strong className="text-gray-900">Email:</strong>{' '}
-                  <a href="mailto:legal@nimbusdev.com" className="text-purple-600 hover:underline">
-                    legal@nimbusdev.com
+                  <a href="mailto:support@auroradev.com" className="text-purple-600 hover:underline">
+                    support@auroradev.com
                   </a>
                 </div>
                 <div>
                   <strong className="text-gray-900">Data Protection Officer:</strong>{' '}
-                  <a href="mailto:dpo@nimbusdev.com" className="text-purple-600 hover:underline">
-                    dpo@nimbusdev.com
+                  <a href="mailto:support@auroradev.com" className="text-purple-600 hover:underline">
+                    support@auroradev.com
                   </a>
                 </div>
                 <div>
                   <strong className="text-gray-900">Security Issues:</strong>{' '}
-                  <a href="mailto:security@nimbusdev.com" className="text-purple-600 hover:underline">
-                    security@nimbusdev.com
+                  <a href="mailto:support@auroradev.com" className="text-purple-600 hover:underline">
+                    support@auroradev.com
                   </a>
                 </div>
               </div>

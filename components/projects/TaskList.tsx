@@ -20,12 +20,12 @@ export function TaskList({ tasks }: { tasks: TaskWithAssignee[] }) {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'done':
-        return 'bg-green-100 text-green-700'
+        return 'bg-violet-100 text-violet-700'
       case 'in_progress':
       case 'assigned':
-        return 'bg-blue-100 text-blue-700'
+        return 'bg-purple-100 text-purple-700'
       case 'awaiting_review':
-        return 'bg-yellow-100 text-yellow-700'
+        return 'bg-pink-100 text-pink-700'
       case 'canceled':
         return 'bg-gray-100 text-gray-700'
       default:
@@ -54,7 +54,7 @@ export function TaskList({ tasks }: { tasks: TaskWithAssignee[] }) {
       case 'bug':
         return 'bg-red-100 text-red-700'
       case 'content':
-        return 'bg-blue-100 text-blue-700'
+        return 'bg-purple-100 text-purple-700'
       default:
         return 'bg-gray-100 text-gray-700'
     }

@@ -46,12 +46,12 @@ export default function BlogPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/how-it-works">
-                  <Button variant="primary" size="large">
+                  <Button variant="primary" size="large" type="button">
                     How It Works
                   </Button>
                 </Link>
                 <Link href="/pricing">
-                  <Button variant="outline" size="large">
+                  <Button variant="outline" size="large" type="button">
                     View Pricing
                   </Button>
                 </Link>
@@ -111,7 +111,7 @@ export default function BlogPage() {
                 className="flex-1 px-6 py-3 rounded-lg outline-none"
                 disabled
               />
-              <Button variant="secondary" size="large" disabled>
+              <Button variant="secondary" size="large" type="button" disabled>
                 Coming Soon
               </Button>
             </div>

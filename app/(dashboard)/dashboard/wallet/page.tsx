@@ -96,8 +96,8 @@ export default async function WalletPage() {
           {/* Total Earned */}
           <div className="bg-white rounded-2xl p-6 border border-gray-200">
             <div className="flex items-center justify-between mb-4">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 bg-violet-100 rounded-xl flex items-center justify-center">
+                <TrendingUp className="w-6 h-6 text-violet-600" />
               </div>
             </div>
             <div className="space-y-1">
