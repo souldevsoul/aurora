@@ -2,13 +2,13 @@ import PageContainer from '@/components/layout/page-container'
 
 export default function CookiesPage() {
   const seoData = {
-    description: 'Cookie Policy for Nimbus - Learn about how we use cookies and tracking technologies.',
+    description: 'Cookie Policy for Aurora - Learn about how we use cookies and tracking technologies.',
     keywords: ['cookies', 'tracking', 'analytics', 'privacy', 'data']
   }
 
   return (
     <PageContainer
-      title="Cookie Policy - Nimbus"
+      title="Cookie Policy - Aurora"
       seo={seoData}
     >
       <section className="relative bg-body py-20">

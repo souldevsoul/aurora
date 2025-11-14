@@ -2,13 +2,13 @@ import PageContainer from '@/components/layout/page-container'
 
 export default function PrivacyPage() {
   const seoData = {
-    description: 'Privacy Policy for Nimbus - Learn how we collect, use, and protect your data.',
+    description: 'Privacy Policy for Aurora - Learn how we collect, use, and protect your data.',
     keywords: ['privacy', 'privacy policy', 'data protection', 'GDPR', 'security']
   }
 
   return (
     <PageContainer
-      title="Privacy Policy - Nimbus"
+      title="Privacy Policy - Aurora"
       seo={seoData}
     >
       <section className="relative bg-body py-20">
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             <section className="mb-12">
               <h2 className="font-heading text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                At Nimbus, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
+                At Aurora, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service.
               </p>
             </section>
 
